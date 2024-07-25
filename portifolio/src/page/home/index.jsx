@@ -4,6 +4,8 @@ import ProtCoca from "../../assets/img/coca.png"
 import food from "../../assets/img/food.png"
 import woman from "../../assets/img/woman.png"
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 export default function Home() {
   const [value, setValue] = useState({
     name : "",
@@ -14,6 +16,7 @@ export default function Home() {
   return (
     <div className={style.conatiner}>
       <div className={style.Header}>
+      <SpeedInsights />
         <div className={style.logo}>
           Art
         </div>
