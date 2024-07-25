@@ -23,6 +23,9 @@ export default function Home() {
         </div>
       </div>
       <div id="home" className={style.Home}>
+        <div className={style.ContImage}>
+          <img src={HomeImage} alt="imagem" className={style.image} />
+        </div>
         <div className={style.ContainerhomeInfo}>
           <div className={style.text}>
             <div className={style.title}>
@@ -35,9 +38,6 @@ export default function Home() {
               <a  >Conhecer</a>
             </a>
           </div>
-        </div>
-        <div className={style.ContImage}>
-          <img src={HomeImage} alt="imagem" className={style.image} />
         </div>
       </div>
       <div id="portifolio" className={style.portifolio}>
