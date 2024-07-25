@@ -10,6 +10,7 @@
   height: 10vh;
   width: 100%;
   background-color: black;
+  /* position: fixed; */
 }
 
 .menu {
@@ -19,14 +20,14 @@
   justify-content: left;
   width: 60%;
   height: 80px;
-  gap: 60px;
+  gap: 10%;
 }
 
 .item {
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 100;
 
 }
 
@@ -162,39 +163,30 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #cccccc50;
   border-radius: 10px;
   width: 100%;
   height: 80%;
 }
 
-.CardProj {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 31%;
-  height: 90%;
-  background-color: white;
-  border-radius: 5px;
-  border: 0.5px solid #ccc;
-}
 .CardProjwoman {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 31%;
-  height: 90%;
+  height: 80%;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid #ccc;
 }
 
+
+
 .cardImage {
-  margin-top: 20px;  
+  padding: 10px;
+
   width: 90%;
-  height: 90%;
+  height: auto;
 }
 
 .ProfImag {
@@ -204,19 +196,71 @@
 }
 
 .cardText {
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
-  width: 40%;
-  height: 80%;
+  align-items: center;
+  justify-content: start;
+  width: 80%;
+  height: 40%;
   gap: 10px;
 }
 
 .CardTitle {
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
 }
 
 .CardDescri {
+  text-align: justify;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (max-width: 780px) {
+  .ContAllcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .CardProjwoman {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 30%;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+  }
+
+  .cardText {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 80%;
+    gap: 10px;
+  }
+  .CardTitle {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .CardDescri {
+    width: 90%;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+  }
 }
