@@ -28,6 +28,12 @@
   font-size: 17px;
   text-decoration: none;
   font-weight: 100;
+  transition: all 0.3s ease;
+  border-bottom: 0.5px solid rgba(0, 0, 255, 0);
+
+  &:hover{
+    border-bottom: 0.5px solid white;
+  }
 
 }
 
@@ -99,6 +105,17 @@
   height: 50px;
   text-decoration: none;
 
+
+}
+.Button a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+}
+.Button:hover a{
+    color: rgb(0, 119, 255);
+  
 }
 
 .title {
@@ -111,10 +128,6 @@
   font-weight: 300;
 }
 
-.Button a {
-  color: black;
-  text-decoration: none;
-}
 
 .portifolio {
   display: flex;
@@ -165,32 +178,39 @@
   justify-content: space-around;
   border-radius: 10px;
   width: 100%;
-  height: auto;
+  height: 55vh;
+  /* background-color: #ccc; */
 }
 
 .CardProjwoman {
+  cursor: pointer;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 33%;
-  height: 60vh;
+  height: 55vh;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid #ccc;
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* overflow-y: hidden; */
 }
 
-.ContAllcard:hover > :not(:hover){
+.ContAllcard:hover > :not(:hover) {
   opacity: 0.4;
   transform: scale(90%);
+}
+.CardProjwoman:hover  .CardDescri{
+opacity: 1;
+
 }
 
 .cardImage {
   padding: 10px;
-
   width: 90%;
-  height: auto;
+  height: 70%;
 }
 
 .ProfImag {
@@ -218,9 +238,138 @@ transition: all 0.3s ease;
 }
 
 .CardDescri {
-  text-align: justify;
+  transition: all 0.3s ease;
+  opacity: 0;
+  text-align: start;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.Sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.SobretextCoatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+
+.TextSobreCopnatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+
+}
+
+.SobreTitle {
+  font-size: 90px;
+  font-weight: 300;
+}
+
+.SobreSubtitle {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.requestConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.InputConatiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+
+}
+.cardinput{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border:  0.5px solid #ccc;
+  border-radius: 10px;
+  width: 70%;
+  height: 50vh;
+}
+.infoSobre{
+  font-size: 18px;
+  font-weight: 400px;
+  width: 90%;
+  text-align: left;
+}
+
+.inputSobre{
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  border:  0.5px solid #ccc;
+
+}
+.TextArea{
+  width: 90%;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  border:  0.5px solid #ccc;
+  resize: none;
+
+}
+.ConainerSobreButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  width: 90%;
+}
+.Sobrebutton{
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border: 0.5px solid #ccc;
+border-radius: 5px;  
+transition: all 0.3s ease;
+&:hover{
+  background-color: whitesmoke;
+}
+}
+
+.footCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  height: 10vh;
+}
+.textfoof{
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
 }
 
 @media (max-width: 780px) {
@@ -256,11 +405,13 @@ transition: all 0.3s ease;
     height: 80%;
     gap: 10px;
   }
+
   .CardTitle {
     width: 90%;
     font-size: 18px;
     font-weight: 600;
   }
+
   .CardDescri {
     width: 90%;
     text-align: justify;
