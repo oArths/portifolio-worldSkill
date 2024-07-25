@@ -1,8 +1,8 @@
 import style from "./style.module.css";
 import HomeImage from "../../assets/img/image.png"
 import ProtCoca from "../../assets/img/coca.png"
-import food from "../../assets/img/food.png" 
-import woman from "../../assets/img/woman.png" 
+import food from "../../assets/img/food.png"
+import woman from "../../assets/img/woman.png"
 export default function Home() {
   return (
     <div className={style.conatiner}>
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
               <div className={style.cardText}>
                 <div className={style.CardTitle}>
-                Coca-Cola
+                  Coca-Cola
                 </div>
                 <div className={style.CardDescri}>
                   um parceria memoravel com a Coca-Cola onde ele desenvolverl ilustrações pra mesma em seu comercial na copa do mundo
@@ -76,10 +76,10 @@ export default function Home() {
               </div>
               <div className={style.cardText}>
                 <div className={style.CardTitle}>
-                Outubro Rosa 
+                  Outubro Rosa
                 </div>
                 <div className={style.CardDescri}>
-                  um parceria com o governo brasileiro onde participou da divulgação do mês  de conciencia ao cancer de mama desenvolvendo ilustrações de mulheres 
+                  um parceria com o governo brasileiro onde participou da divulgação do mês  de conciencia ao cancer de mama desenvolvendo ilustrações de mulheres
                 </div>
               </div>
             </div>
@@ -89,10 +89,10 @@ export default function Home() {
               </div>
               <div className={style.cardText}>
                 <div className={style.CardTitle}>
-                  Vegan-Food 
+                  Vegan-Food
                 </div>
                 <div className={style.CardDescri}>
-                Artístico participou da campanha de lançamento da Vegan-Food, Empresa de fast-food totalmente vegana, sendo a principal mente criativa na idealização da marca e seu desing
+                  Artístico participou da campanha de lançamento da Vegan-Food, Empresa de fast-food totalmente vegana, sendo a principal mente criativa na idealização da marca e seu desing
                 </div>
               </div>
             </div>

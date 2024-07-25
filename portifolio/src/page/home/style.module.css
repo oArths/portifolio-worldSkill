@@ -165,7 +165,7 @@
   justify-content: space-around;
   border-radius: 10px;
   width: 100%;
-  height: 80%;
+  height: auto;
 }
 
 .CardProjwoman {
@@ -174,13 +174,17 @@
   align-items: center;
   justify-content: space-evenly;
   width: 31%;
-  height: 80%;
+  height: 60vh;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid #ccc;
+transition: all 0.3s ease;
 }
 
-
+.ContAllcard:hover > :not(:hover){
+  opacity: 0.4;
+  transform: scale(90%);
+}
 
 .cardImage {
   padding: 10px;
