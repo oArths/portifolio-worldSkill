@@ -239,6 +239,7 @@ opacity: 1;
 }
 
 .CardDescri {
+  user-select: none;
   transition: all 0.3s ease;
   opacity: 0;
   text-align: start;
@@ -474,6 +475,7 @@ transition: all 0.3s ease;
   }
 
   .CardDescri {
+    user-select: none;
     width: 90%;
     text-align: justify;
     font-size: 15px;
