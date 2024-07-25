@@ -8,10 +8,10 @@ export default function Home() {
     <div className={style.conatiner}>
       <div className={style.Header}>
         <div className={style.logo}>
-          logo
+          Art
         </div>
         <div className={style.menu}>
-          <a href="home" className={style.item}>
+          <a href="#home" className={style.item}>
             Home
           </a>
           <a href="#portifolio" className={style.item}>
@@ -45,7 +45,7 @@ export default function Home() {
         <div className={style.TitlePortifeli}>
           <div className={style.portifileTetx}>
             <div className={style.portTitle}>
-              Projetos de Artistico
+              Projetos de Artístico
             </div>
             <div className={style.portsubtitle}>
               Artístico é um artista consolidado na industria tendo partipação em diversas obras se destacando no cartoon
@@ -56,34 +56,32 @@ export default function Home() {
 
         <div className={style.ContCradProj}>
           <div className={style.ContAllcard}>
-            {/* <div className={style.cradalltitle}>
-              Projetos
-            </div> */}
-            <div className={style.CardProj}>
+            <div className={style.CardProjwoman}>
               <div className={style.cardImage}>
                 <img src={ProtCoca} className={style.ProfImag} />
               </div>
               <div className={style.cardText}>
                 <div className={style.CardTitle}>
-                  Parceria com a Coca-Colla
+                Coca-Cola
                 </div>
                 <div className={style.CardDescri}>
-                  um parceria memoravel com a cocacola onde el desenvolverl ilustrações pra mesma em seu comercial na copa do mundo
+                  um parceria memoravel com a Coca-Cola onde ele desenvolverl ilustrações pra mesma em seu comercial na copa do mundo
+                  onde ficou responsavel por desenvolver novos botoms para serem brindes da coca-cola na copa do mundo.
                 </div>
               </div>
             </div>
             <div className={style.CardProjwoman}>
-              {/* <div className={style.cardText}> */}
-                <div className={style.CardTitle}>
-                  Parceria com a Coca-Colla
-                </div>
-              <div className={style.cardImage}>
+              <div className={style.cardImage}  >
                 <img src={woman} className={style.ProfImag} />
               </div>
-                <div className={style.CardDescri}>
-                  um parceria memoravel com a cocacola onde el desenvolverl ilustrações pra mesma em seu comercial na copa do mundo
+              <div className={style.cardText}>
+                <div className={style.CardTitle}>
+                Outubro Rosa 
                 </div>
-              {/* </div> */}
+                <div className={style.CardDescri}>
+                  um parceria com o governo brasileiro onde participou da divulgação do mês  de conciencia ao cancer de mama desenvolvendo ilustrações de mulheres 
+                </div>
+              </div>
             </div>
             <div className={style.CardProjwoman}>
               <div className={style.cardImage}>
@@ -91,10 +89,10 @@ export default function Home() {
               </div>
               <div className={style.cardText}>
                 <div className={style.CardTitle}>
-                  Parceria com a Coca-Colla
+                  Vegan-Food 
                 </div>
                 <div className={style.CardDescri}>
-                  um parceria memoravel com a cocacola onde el desenvolverl ilustrações pra mesma em seu comercial na copa do mundo
+                Artístico participou da campanha de lançamento da Vegan-Food, Empresa de fast-food totalmente vegana, sendo a principal mente criativa na idealização da marca e seu desing
                 </div>
               </div>
             </div>
