@@ -3,7 +3,14 @@ import HomeImage from "../../assets/img/image.png"
 import ProtCoca from "../../assets/img/coca.png"
 import food from "../../assets/img/food.png"
 import woman from "../../assets/img/woman.png"
+import { useState } from "react";
 export default function Home() {
+  const [value, setValue] = useState({
+    name : "",
+    des : "",
+
+  })
+
   return (
     <div className={style.conatiner}>
       <div className={style.Header}>
@@ -119,10 +126,10 @@ export default function Home() {
                 Tire suas Duvidas
 
               </div>
-              <input className={style.inputSobre} type="text" placeholder="Nome" />
-              <textarea className={style.TextArea} placeholder="Asssunto" maxLength={600} resize="none" rows="10"></textarea>
+              <input className={style.inputSobre} type="text" placeholder="Nome"  value={value.name} onChange={(e) => setValue({...value, name: e.target.value})}/>
+              <textarea className={style.TextArea} placeholder="Asssunto" value={value.des}  onChange={(e) => setValue({...value, des: e.target.value})} maxLength={600} resize="none" rows="10"></textarea>
               <div className={style.ConainerSobreButton}>
-                <div className={style.Sobrebutton}>
+                <div className={style.Sobrebutton} onClick={() => setValue({name : '', des : ''})}>
                   Enviar
 
                 </div>
