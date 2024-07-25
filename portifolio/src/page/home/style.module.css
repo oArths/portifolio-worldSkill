@@ -51,7 +51,7 @@
 
 .Home {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
   width: 100%;
@@ -154,14 +154,16 @@
 }
 
 .portTitle {
-  font-size: 90px;
+  font-size: 5rem;
   font-weight: 600;
 }
 
 .portsubtitle {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 300;
 }
+
+
 
 .ContCradProj {
   display: flex;
@@ -179,7 +181,6 @@
   border-radius: 10px;
   width: 100%;
   height: 55vh;
-  /* background-color: #ccc; */
 }
 
 .CardProjwoman {
@@ -247,6 +248,7 @@ opacity: 1;
 
 .Sobre {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -273,13 +275,13 @@ opacity: 1;
 }
 
 .SobreTitle {
-  font-size: 90px;
+  font-size: 5.625rem;
   font-weight: 300;
 }
 
 .SobreSubtitle {
+  font-size: 1.875rem;
   font-weight: 100;
-  font-size: 30px;
 }
 
 .requestConatiner {
@@ -373,6 +375,57 @@ transition: all 0.3s ease;
 }
 
 @media (max-width: 780px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90vh;
+    font-weight: 400;
+  }
+
+  .TitlePortifeli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .ContImage {
+    margin-top: 20px;
+    width: 90%;
+    height: 50%
+  }
+  .ContainerhomeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    gap: 23px;
+  }
+  .portTitle {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.portsubtitle {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.portifolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 260vh;
+  gap: 10%;
+  font-weight: 400;
+}
   .ContAllcard {
     display: flex;
     flex-direction: column;
@@ -380,16 +433,16 @@ transition: all 0.3s ease;
     justify-content: space-around;
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .CardProjwoman {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
-    height: 30%;
+    width: 90%;
+    height: 58vh;
     background-color: white;
     border-radius: 5px;
     border: 0.5px solid #ccc;
@@ -405,6 +458,14 @@ transition: all 0.3s ease;
     height: 80%;
     gap: 10px;
   }
+  .ContCradProj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+  }
+  
 
   .CardTitle {
     width: 90%;
@@ -417,5 +478,63 @@ transition: all 0.3s ease;
     text-align: justify;
     font-size: 15px;
     font-weight: 400;
+  }
+  .Sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .SobretextCoatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  
+  }
+  .TextSobreCopnatiner{
+    width: 90%;
+  }
+  .SobreTitle {
+    width: 100%;
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+  .item {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 100;
+    transition: all 0.3s ease;
+    border-bottom: 0.5px solid rgba(0, 0, 255, 0);
+  
+    &:hover{
+      border-bottom: 0.5px solid white;
+    }
+  
+  }
+  
+  .SobreSubtitle {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+  .requestConatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .InputConatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  
   }
 }
